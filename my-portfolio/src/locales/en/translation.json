@@ -4,8 +4,15 @@
   "invitation": "See My Work",
   "aboutTitle": "About Me",
   "aboutMe": "I am a systems analyst with training in Full Stack Web Development and experience in programming projects. Proficient in modern technologies, technical problem-solving, and hardware maintenance. Passionate about technology and continuous learning, seeking to contribute to the development of innovative technological solutions in collaborative environments.",
-  "contactTitle":"Contact Me",
-  "contactDescription":"Feel free to reach out for collaborations or just a friendly hello!",
-  "contactButton":"Say Hello"
+  "contactTitle": "Contact Me",
+  "contactDescription": "Feel free to reach out for collaborations or just a friendly hello!",
+  "contactButton": "Say Hello",
+  "projectsTitle": "Projects",
+  "viewProject": "View Project",
+  "skillsTitle": "Skills",
+  "navigateAbout": "About",
+  "navigateProjects": "Projects",
+  "navigateSkills": "Skills",
+  "navigateContact": "Contact",
+  "copyrightFooter": "Franco Argüello. All rights reserved."
 }
-

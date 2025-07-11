@@ -2,9 +2,17 @@
   "greeting": "¡Hola, soy Franco!",
   "occupation": "Desarrollador Frontend | Analista en Sistemas",
   "invitation": "Revisá mi trabajo",
-  "aboutTitle":"Sobre Mí",
-  "aboutMe":"Soy un Analista en sistemas con estudios en desarrollo Frontend y experiencia en proyectos de desarrollo. Tengo conocimiento en tecnologías modernas, resolución de problemas, y mantenimiento de hardware. Apasionado de la tecnológia y capacitado continuamente, buscando contribuir en el desarrollo de soluciones tecnológicas innovativas en ambientes colaborativos.",
-  "contactTitle":"Contactame",
-  "contactDescription":"Sientete libre de contactarme para colaborar o simplemente decir Hola!",
-  "contactButton":"Decir Hola"
+  "aboutTitle": "Sobre Mí",
+  "aboutMe": "Soy un Analista en sistemas con estudios en desarrollo Frontend y experiencia en proyectos de desarrollo. Tengo conocimiento en tecnologías modernas, resolución de problemas, y mantenimiento de hardware. Apasionado de la tecnológia y capacitado continuamente, buscando contribuir en el desarrollo de soluciones tecnológicas innovativas en ambientes colaborativos.",
+  "contactTitle": "Contactame",
+  "contactDescription": "Sientete libre de contactarme para colaborar o simplemente decir Hola!",
+  "contactButton": "Decir Hola",
+  "projectsTitle": "Proyectos",
+  "viewProject": "Ver proyecto",
+  "skillsTitle": "Habilidades",
+  "navigateAbout": "Sobre Mi",
+  "navigateProjects": "Proyectos",
+  "navigateSkills": "Habilidades",
+  "navigateContact": "Contactar",
+  "copyrightFooter": "Franco Argüello. Todos los derechos reservados."
 }
