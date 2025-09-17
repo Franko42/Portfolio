@@ -1,18 +1,21 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
+import heroBg from "../assets/hero-bg.jpg";
+import profilePic from "../assets/franco.jpg";
 
 const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-[50vh] max-h-[60vh] flex items-center justify-center bg-blue-50 text-center bg-cover bg-center "
-      style={{ backgroundImage: "url('/hero-bg.jpg')" }} >
+    <section className="min-h-[60vh] max-h-[60vh] flex items-center justify-center bg-blue-50 text-center bg-cover bg-center "
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
       <div className='col md:flex items-center justify-center'>
 
         <div className='flex items-center justify-center md:w-1/2 w-full '>
           <div className="w-2/4 h-2/4 md:w-2/4 md:w-2/4  aspect-square rounded-full overflow-hidden  ">
             <img
-              src="../../public/franco.jpg"
+              src={profilePic}
               alt="Profile"
               className="w-full h-full object-cover"
             />
