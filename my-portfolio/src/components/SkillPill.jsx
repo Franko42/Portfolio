@@ -17,7 +17,7 @@ export default function SkillPill({ skill, level }) {
               }`}
             />
           ))}
-          {/* Battery cap */}
+        
         </div>
       </div>
     );
