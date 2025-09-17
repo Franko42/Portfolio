@@ -13,8 +13,8 @@ const Contact = () => {
         <h3 className="text-3xl font-bold text-white text-start">{t("contactTitle")}</h3>
         <div>
           <div className="flex justify-between gap-3 mt-6">
-            <SocialLink Icon={FaLinkedin} name="LinkedIn" url="https://linkedin.com/in/francoarguello" />
-            <SocialLink Icon={FaGithub} name="GitHub" url="https://github.com/yourusername" />
+            <SocialLink Icon={FaLinkedin} name="LinkedIn" url="https://www.linkedin.com/in/franco-agustin-arguello/" />
+            <SocialLink Icon={FaGithub} name="GitHub" url="https://github.com/Franko42" />
             <SocialLink Icon={FaEnvelope} name="Email" url="mailto:frankoarguello42@gmail.com" />
           </div>
         </div>
