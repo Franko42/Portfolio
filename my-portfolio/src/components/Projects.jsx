@@ -5,8 +5,8 @@ const Projects = () => {
   const { t } = useTranslation();
   
   return (
-    <section id="projects" className="py-16 bg-gray-700">
-      <div className="max-w-6xl mx-auto px-4">
+    <section id="projects" className="py-16 bg-gray-800">
+      <div className="max-w-4xl mx-auto px-4">
         <h3 className="text-3xl font-bold text-white ">{t("projectsTitle")}</h3>
         <div className="grid mt-4 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* Example Project Card */}

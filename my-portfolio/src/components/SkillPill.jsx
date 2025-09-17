@@ -4,7 +4,7 @@ export default function SkillPill({ skill, level }) {
     const filledBars = Math.round((level / 100) * totalBars);
   
     return (
-      <div className="inline-flex items-center bg-gray-500 px-4 py-2 rounded-full shadow-sm text-sm font-medium gap-3 outline-2 outline-violet-300">
+      <div className="inline-flex items-center bg-gray-500 px-4 py-2 rounded-md shadow-sm text-sm font-medium gap-3 outline-2 outline-violet-300">
         <span className="text-white">{skill}</span>
         {/* Battery */}
         <div className="flex items-center gap-0.5 border border-gray-400 px-1 py-0.5 rounded-sm relative">
@@ -12,7 +12,7 @@ export default function SkillPill({ skill, level }) {
           {Array.from({ length: totalBars }).map((_, idx) => (
             <div
               key={idx}
-              className={`w-2 h-4 mx-0.5 ${
+              className={`w-2 h-4 mx-0.2 ${
                 idx < filledBars ? "bg-blue-300" : "bg-gray-300"
               }`}
             />

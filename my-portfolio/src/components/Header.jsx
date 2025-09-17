@@ -17,10 +17,8 @@ const Header = () => {
 
   return (
     <header className="bg-gray-800 shadow sticky top-0 z-50">
-      <div className="flex justify-between items-center px-4 py-4">
-        {/* Left side (Logo or nav) */}
+      <div className="flex justify-between items-center px-4 py-1">
         <div className="flex items-center">
-          {/* Desktop nav */}
           <div className="flex justify-between items-center w-full">
             <nav className="hidden md:flex space-x-6 text-white">
               <button onClick={() => scrollToSection('about')} className="hover:underline cursor-pointer">{t("navigateAbout")}</button>
@@ -31,28 +29,25 @@ const Header = () => {
           </div>
 
 
-          {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white focus:outline-none ml-2"
+            className="md:hidden text-white focus:outline-none ml-2 cursor-pointer"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
 
-        {/* Right side */}
         <div className="flex items-center">
           <LanguageSwitcher />
         </div>
       </div>
 
-      {/* Mobile dropdown menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-700 px-4 pb-4 space-y-2 text-white">
-          <button onClick={() => scrollToSection('about')} className="block w-full text-left hover:underline">{t("navigateAbout")}</button>
-          <button onClick={() => scrollToSection('projects')} className="block w-full text-left hover:underline">{t("navigateProjects")}</button>
-          <button onClick={() => scrollToSection('skills')} className="block w-full text-left hover:underline">{t("navigateSkills")}</button>
-          <button onClick={() => scrollToSection('contact')} className="block w-full text-left hover:underline">{t("navigateContact")}</button>
+          <button onClick={() => scrollToSection('about')} className="block w-full text-center hover:underline cursor-pointer">{t("navigateAbout")}</button>
+          <button onClick={() => scrollToSection('projects')} className="block w-full text-center hover:underline cursor-pointer">{t("navigateProjects")}</button>
+          <button onClick={() => scrollToSection('skills')} className="block w-full text-center hover:underline cursor-pointer">{t("navigateSkills")}</button>
+          <button onClick={() => scrollToSection('contact')} className="block w-full text-center hover:underline cursor-pointer">{t("navigateContact")}</button>
         </div>
       )}
     </header>
