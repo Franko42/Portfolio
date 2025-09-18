@@ -14,6 +14,11 @@ const Projects = () => {
             <p className="text-gray-600 mb-2">Conectando is a platform developed by Silicon Misiones that bridges the gap between startups, entrepreneurs, and digital professionals. It connects innovative projects with skilled tech talent, fostering meaningful collaborations that drive the future of technology in the region.</p>
             <a href="http://Conectando.com.ar" className="text-blue-600 underline hover:underline">{t("viewProject")}</a>
           </div>
+            <div className="bg-white shadow rounded p-4">
+            <h4 className="text-xl font-bold mb-2">Notes</h4>
+            <p className="text-gray-600 mb-2">Notes is a technical test i did for a company, in wich i had three days to create a functional web app to manage Sticky notes, the frontend made with react and the backend with NodeJS and ExpressJS using PostgreSQL as a database and fully deployable with docker compose.</p>
+            <a href="http://Conectando.com.ar" className="text-blue-600 underline hover:underline">{t("viewProject")}</a>
+          </div>
         </div>
       </div>
     </section>

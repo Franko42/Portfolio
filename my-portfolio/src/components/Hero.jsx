@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-[60vh] max-h-[60vh] flex items-center justify-center bg-blue-50 text-center bg-cover bg-center "
+    <section className="min-h-[80vh] max-h-[90vh] md:min-h-[60vh] md:max-h-[70vh] flex items-center justify-center bg-blue-50 text-center bg-cover bg-center "
       style={{ backgroundImage: `url(${heroBg})` }}
     >
       <div className='col md:flex items-center justify-center'>
