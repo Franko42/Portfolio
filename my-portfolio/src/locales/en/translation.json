@@ -8,7 +8,40 @@
   "contactDescription": "Feel free to reach out for collaborations or just a friendly hello!",
   "contactButton": "Say Hello",
   "projectsTitle": "Projects",
+  "roleLabel": "Role",
   "viewProject": "View Project",
+  "projects": {
+    "conectando": {
+      "name": "Conectando.com.ar",
+      "role": "Frontend Developer",
+      "description": "Conectando is a platform developed by Silicon Misiones that bridges the gap between startups, entrepreneurs, and digital professionals. It connects innovative projects with skilled tech talent, fostering meaningful collaborations that drive the future of technology in the region."
+    },
+    "simi": {
+      "name": "Simi-access",
+      "role": "FullStack Developer",
+      "description": "SIMI-ACCESS is an access control and attendance management system developed for the Silicon Misiones business building. It allows recording personnel entries and exits, managing users and roles, and viewing attendance information centrally and securely."
+    },
+    "sinam": {
+      "name": "SINAM",
+      "role": "Tester",
+      "description": "Web system for managing internal cases for the Defender of Children and Adolescents' Rights of the Vice-Governorship."
+    },
+    "spinlab": {
+      "name": "Spinlab",
+      "role": "Tester",
+      "description": "Notes is a technical test I did for a company, where I had three days to create a functional web app to manage sticky notes. Frontend in React and backend in Node.js/Express with PostgreSQL, deployable with Docker Compose."
+    },
+    "alarms": {
+      "name": "Alarms",
+      "role": "Own Project",
+      "description": "Alarms is a practice project developed as a simple alarm manager that allows creating, editing, deleting and snoozing alarms. The backend uses cron tasks and PostgreSQL persistence, with a modern Next.js interface."
+    },
+    "notes": {
+      "name": "Notes",
+      "role": "Own Project",
+      "description": "Notes is a technical test I did for a company, where I had three days to create a functional web app to manage sticky notes. Frontend in React and backend in Node.js/Express with PostgreSQL, deployable with Docker Compose."
+    }
+  },
   "skillsTitle": "Skills",
   "navigateAbout": "About",
   "navigateProjects": "Projects",
