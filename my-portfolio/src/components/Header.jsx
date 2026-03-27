@@ -16,16 +16,17 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800 shadow sticky top-0 z-50">
+    <header className="bg-gray-900/60 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
       <div className="flex justify-between items-center px-4 py-1">
         <div className="flex items-center">
           <div className="flex justify-between items-center w-full">
-            <nav className="hidden md:flex space-x-6 text-white">
-              <button onClick={() => scrollToSection('about')} className="hover:underline cursor-pointer">{t("navigateAbout")}</button>
-              <button onClick={() => scrollToSection('projects')} className="hover:underline cursor-pointer">{t("navigateProjects")}</button>
-              <button onClick={() => scrollToSection('skills')} className="hover:underline cursor-pointer">{t("navigateSkills")}</button>
-              <button onClick={() => scrollToSection('contact')} className="hover:underline cursor-pointer">{t("navigateContact")}</button>
+            <nav className="hidden md:flex gap-8 text-sm font-medium tracking-wide text-white">
+              <button onClick={() => scrollToSection('about')} className="hover:text-blue-400 transition-colors duration-200 cursor-pointer">{t("navigateAbout")}</button>
+              <button onClick={() => scrollToSection('projects')} className="hover:text-blue-400 transition-colors duration-200 cursor-pointer">{t("navigateProjects")}</button>
+              <button onClick={() => scrollToSection('skills')} className="hover:text-blue-400 transition-colors duration-200 cursor-pointer">{t("navigateSkills")}</button>
+              <button onClick={() => scrollToSection('contact')} className="hover:text-blue-400 transition-colors duration-200 cursor-pointer">{t("navigateContact")}</button>
             </nav>
+            
           </div>
 
 

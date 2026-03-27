@@ -10,7 +10,7 @@ import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
-    <div className="w-full min-h-screen font-sans bg-gray-100 text-gray-900">
+    <div className="w-full min-h-screen font-sans bg-gray-800 text-gray-900">
       <Header />
       <Hero />
       <About />

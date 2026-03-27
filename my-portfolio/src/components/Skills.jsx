@@ -1,40 +1,37 @@
-import React from 'react';
-import SkillPill from './SkillPill';
+import React from "react";
+import { SkillIcon } from "./SkillIcon";
 import { useTranslation } from "react-i18next";
+
+const skillList = [
+  { name: "React", icon: "react" },
+  { name: "NextJS", icon: "nextjs" },
+  { name: "JavaScript", icon: "javascript" },
+  { name: "TypeScript", icon: "typescript" },
+  { name: "Node.js", icon: "nodejs" },
+  { name: "Docker", icon: "docker" },
+  { name: "PostgreSQL", icon: "postgresql" },
+  { name: "MySQL", icon: "mysql" },
+  { name: "Git", icon: "git" },
+  { name: "GitLab", icon: "gitlab" },
+  { name: "GitHub", icon: "github" },
+  { name: "Tailwind", icon: "tailwindcss" },
+  { name: "Bootstrap", icon: "bootstrap" },
+  { name: "Figma", icon: "figma" },
+];
 
 const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="skills" className="py-16 bg-gray-700">
-      <div className="max-w-4xl mx-auto px-4">
-        <h3 className="text-3xl font-bold mb-4 text-white">{t("skillsTitle")}</h3>
-        <div className='mt-4 flex flex-wrap gap-3 justify-between md:justify-start'>
-          <SkillPill skill="Agile" level={40} />
-          <SkillPill skill="Bootstrap" level={30} />
-          <SkillPill skill="CSS" level={60} />
-          <SkillPill skill="Docker" level={40} />
-          <SkillPill skill="Figma" level={30} />
-          <SkillPill skill="GitHub" level={30} />
-          <SkillPill skill="JavaScript" level={50} />
-          <SkillPill skill="Jira" level={80} />
-          <SkillPill skill="MySQL" level={40} />
-          <SkillPill skill="Node.js" level={40} />
-          <SkillPill skill="PostgreSQL" level={30} />
-          <SkillPill skill="React" level={80} />
-          <SkillPill skill="SCRUM" level={50} />
-          <SkillPill skill="SQL" level={60} />
-          <SkillPill skill="Tailwind" level={80} />
-          <SkillPill skill="NextJS" level={40} />
-          <SkillPill skill="Prisma" level={30} />
-          <SkillPill skill="Gitlab" level={60} />
-          <SkillPill skill="Typescript" level={30} />
-          <SkillPill skill="Git" level={50} />
-
-          <SkillPill skill="CI/CD" level={20} />
-
-
-
+    <section id="skills" className="py-16 bg-gray-700 border-b border-white/5">
+      <div className="max-w-4xl mx-auto px-4 ">
+        <h3 className="text-2xl md:text-3xl font-semibold mb-6 text-white">
+          {t("skillsTitle")}
+        </h3>
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 sm:grid-cols-4 md:grid-cols-6 gap-8 md:gap-10">
+          {skillList.map((skill) => (
+            <SkillIcon key={skill.name} skill={skill} />
+          ))}
         </div>
       </div>
     </section>

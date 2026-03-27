@@ -14,34 +14,45 @@
     "conectando": {
       "name": "Conectando.com.ar",
       "role": "Desarrollador Frontend",
-      "description": "Conectando es una plataforma desarrollada por Silicon Misiones que une startups, emprendedores y profesionales digitales, facilitando colaboraciones significativas para impulsar el futuro de la tecnología en la región."
+      "description": "Conectando es una plataforma desarrollada por Silicon Misiones que conecta startups, emprendedores y profesionales digitales. Participé en el desarrollo frontend, implementando interfaces modernas y mejorando la experiencia de usuario."
     },
     "simi": {
       "name": "Simi-access",
       "role": "FullStack Developer",
-      "description": "SIMI-ACCESS es un sistema de control de accesos y gestión de asistencia para el edificio empresarial de Silicon Misiones. Permite registrar ingresos/egresos, administrar usuarios y roles, y visualizar asistencia de forma centralizada y segura."
+      "description": "Sistema de control de accesos y gestión de asistencia para el edificio empresarial de Silicon Misiones. Desarrollé funcionalidades fullstack para registro de ingresos/egresos, gestión de usuarios y visualización centralizada de asistencia."
     },
     "sinam": {
       "name": "SINAM",
       "role": "Tester",
-      "description": "Sistema web de gestión de casos internos para la defensoría de los derechos de niños, niñas y adolescentes de la vicegobernación."
+      "description": "Sistema web para la gestión de casos internos en la defensoría de derechos de niños, niñas y adolescentes. Participé como tester, asegurando calidad, detección de errores y validación de funcionalidades clave."
     },
     "spinlab": {
       "name": "Spinlab",
       "role": "Tester",
-      "description": "Notes es una prueba técnica en la que tuve tres días para crear una app de notas adhesivas, con frontend en React y backend en Node.js/Express usando PostgreSQL y Docker Compose."
+      "description": "SpinLab es un programa de venture building de Silicon Misiones enfocado en la creación y aceleración de startups científico-tecnológicas. Participé como QA Tester y analista, realizando testing integral del sistema y análisis de requerimientos para garantizar su confiabilidad y soportar flujos operativos complejos."
     },
     "alarms": {
       "name": "Alarms",
       "role": "Proyecto Personal",
-      "description": "Alarms es un proyecto práctico para gestionar alarmas: crear, editar, eliminar y posponer. Backend con tareas cron y PostgreSQL, interfaz moderna en Next.js."
+      "description": "Aplicación para gestión de alarmas que permite crear, editar, eliminar y posponer recordatorios. Desarrollé el backend con tareas programadas (cron) y PostgreSQL, junto a una interfaz moderna en Next.js."
     },
     "notes": {
       "name": "Notes",
       "role": "Proyecto Personal",
-      "description": "Notes es una prueba técnica en la que tuve tres días para crear una app de notas adhesivas, con frontend en React y backend en Node.js/Express usando PostgreSQL y Docker Compose."
+      "description": "Aplicación de notas adhesivas desarrollada como prueba técnica en 3 días. Implementé un frontend en React y backend en Node.js/Express con PostgreSQL y Docker Compose."
     }
   },
+
+  "skills": {
+    "Testing": "Testing",
+    "Manual Testing": "Testing Manual",
+    "Bug Reporting": "Reporte de Bugs",
+    "Technical Analysis": "Análisis Técnico",
+    "Functional Analysis": "Análisis Funcional",
+    "Technical Documentation": "Documentación Técnica",
+    "Cron Jobs": "Tareas Programadas"
+  },
+  
   "skillsTitle": "Habilidades",
   "navigateAbout": "Sobre Mi",
   "navigateProjects": "Proyectos",
