@@ -1,108 +1,106 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
+
+const projects = [
+  { id: "taskagent", availability: "private" },
+  { id: "vertishops", availability: "private" },
+  { id: "conectando", website: "https://conectando.com.ar" },
+  { id: "simi", availability: "professional" },
+  { id: "sinam", availability: "professional" },
+  { id: "spinlab", availability: "professional" },
+  { id: "alarms", source: "https://github.com/Franko42/Alarms.app" },
+  { id: "notes" },
+];
 
 const Projects = () => {
   const { t } = useTranslation();
 
-  const projects = [
-    {
-      id: "conectando",
-      title: t("projects.conectando.name"),
-      role: t("projects.conectando.role"),
-      description: t("projects.conectando.description"),
-      skills: ["React", "Tailwind CSS", "JavaScript", "Figma"],
-      url: "http://Conectando.com.ar",
-    },
-    {
-      id: "simi",
-      title: t("projects.simi.name"),
-      role: t("projects.simi.role"),
-      description: t("projects.simi.description"),
-      skills: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      url: "http://Conectando.com.ar",
-    },
-    {
-      id: "sinam",
-      title: t("projects.sinam.name"),
-      role: t("projects.sinam.role"),
-      description: t("projects.sinam.description"),
-      skills: ["Testing", "Manual Testing", "Bug Reporting"],
-      url: "http://Conectando.com.ar",
-    },
-    {
-      id: "spinlab",
-      title: t("projects.spinlab.name"),
-      role: t("projects.spinlab.role"),
-      description: t("projects.spinlab.description"),
-      skills: [
-        "Testing",
-        "Technical Analysis",
-        "Functional Analysis",
-        "Technical Documentation",
-      ],
-      url: "http://Conectando.com.ar",
-    },
-    {
-      id: "alarms",
-      title: t("projects.alarms.name"),
-      role: t("projects.alarms.role"),
-      description: t("projects.alarms.description"),
-      skills: ["Next.js", "NestJS", "PostgreSQL", "Cron Jobs"],
-      url: "http://Conectando.com.ar",
-    },
-    {
-      id: "notes",
-      title: t("projects.notes.name"),
-      role: t("projects.notes.role"),
-      description: t("projects.notes.description"),
-      skills: [
-        "React",
-        "Node.js",
-        "Express",
-        "PostgreSQL",
-        "Tailwind CSS",
-        "Docker",
-        "TypeScript",
-      ],
-      url: "http://Conectando.com.ar",
-    },
-  ];
-
   return (
-    <section id="projects" className="py-16 bg-gray-800">
-      <div className="max-w-4xl mx-auto px-4">
-        <h3 className="text-2xl md:text-3xl font-semibold text-white">
-          {t("projectsTitle")}
-        </h3>
-        <div className="grid mt-4 gap-6 md:grid-cols-2  space-y-3">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="bg-black/40 border border-white/10 backdrop-blur-[2px] rounded-lg p-5  hover:bg-white/5 hover:scale-[1.02] transition cursor-pointer"
-            >
-              <h4 className="text-white text-lg font-semibold tracking-wide mb-3">
-                {project.title}
-              </h4>
-              <p className="text-md text-white/50 mt-1">{project.role}</p>
-              <p className="text-white/90 mb-2 leading-relaxed max-w-prose">
-                {project.description}
-              </p>
-              <div className="flex flex-wrap gap-2 mt-3">
-                {project.skills.map((skill) => (
-                  <span className="text-white/50 bg-white/20 px-2 py-1 rounded-md">
-                    {skill}
-                  </span>
-                ))}
-              </div>
+    <section id="projects" className="scroll-mt-20 bg-gray-900 py-20" aria-labelledby="projects-title">
+      <div className="mx-auto max-w-6xl px-6 md:px-10">
+        <div className="mb-9 max-w-2xl">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
+            {t("projectsEyebrow")}
+          </p>
+          <h2 id="projects-title" className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            {t("projectsTitle")}
+          </h2>
+        </div>
 
-              {/* <a
-                href={project.url}
-                className="text-white/80 hover:text-white text-sm inline-block mt-2 transition"
+        <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+          {projects.map((project) => {
+            const skills = t(`projects.${project.id}.skills`, { returnObjects: true });
+            const availability = project.availability === "private"
+              ? t("privateProject")
+              : project.availability === "professional"
+                ? t("professionalProject")
+                : null;
+
+            return (
+              <article
+                key={project.id}
+                className={`flex h-full flex-col rounded-xl border p-6 transition duration-200 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/20 ${
+                  project.id === "taskagent"
+                    ? "border-cyan-300/40 bg-gradient-to-br from-cyan-950/70 to-gray-950"
+                    : "border-white/10 bg-white/[0.035] hover:border-white/20"
+                }`}
               >
-                {t("viewProject")}
-              </a> */}
-            </div>
-          ))}
+                <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+                  <span className="text-xs font-semibold uppercase tracking-[0.14em] text-cyan-300">
+                    {t(`projects.${project.id}.role`)}
+                  </span>
+                  {availability && (
+                    <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs text-gray-300">
+                      {availability}
+                    </span>
+                  )}
+                </div>
+                <h3 className="text-xl font-semibold text-white">
+                  {t(`projects.${project.id}.name`)}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-6 text-gray-300">
+                  {t(`projects.${project.id}.description`)}
+                </p>
+
+                <ul className="mt-5 flex flex-wrap gap-2" aria-label={t("technologiesUsed")}>
+                  {Array.isArray(skills) && skills.map((skill) => (
+                    <li
+                      key={skill}
+                      className="rounded-md border border-white/10 bg-black/20 px-2.5 py-1 text-xs text-gray-300"
+                    >
+                      {skill}
+                    </li>
+                  ))}
+                </ul>
+
+                {(project.website || project.source) && (
+                  <div className="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-4">
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-cyan-300 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
+                      >
+                        {t("viewLiveProject")}
+                        <span className="sr-only">: {t(`projects.${project.id}.name`)}</span>
+                      </a>
+                    )}
+                    {project.source && (
+                      <a
+                        href={project.source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-cyan-300 underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
+                      >
+                        {t("viewSource")}
+                        <span className="sr-only">: {t(`projects.${project.id}.name`)}</span>
+                      </a>
+                    )}
+                  </div>
+                )}
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
