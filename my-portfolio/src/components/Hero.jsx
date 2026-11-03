@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import heroBg from "../assets/hero-bg.jpg";
 import profilePic from "../assets/franco.jpg";
@@ -8,36 +7,45 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[80vh]  md:min-h-[60vh] md:max-h-[70vh] flex items-center justify-center bg-blue-50 text-center bg-cover bg-center "
+      className="relative isolate flex min-h-[76vh] items-center overflow-hidden bg-gray-950 bg-cover bg-center py-16 md:min-h-[68vh]"
       style={{ backgroundImage: `url(${heroBg})` }}
+      aria-labelledby="hero-title"
     >
-      <div className=" max-w-5xl mx-auto px-4 absolute inset-0 bg-black/60 md:flex items-center justify-center">
-        <div className=" flex items-center justify-center md:w-1/2 w-full ">
-          <div className="w-40 md:w-65 aspect-square rounded-full overflow-hidden  ">
-            <img
-              src={profilePic}
-              alt="Profile"
-              className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-        </div>
-        <div className="flex-col items-center justify-start md:w-1/2 w-full mt-6 md:mt-0 md:pl-8">
-          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-white mb-5">
-            {t("greeting")}
-          </h2>
-          <p className="text-base md:text-lg text-gray-300 ">
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-950/95 via-gray-950/80 to-gray-950/45" aria-hidden="true" />
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-10 px-6 md:grid-cols-[minmax(0,1.3fr)_minmax(220px,0.7fr)] md:px-10">
+        <div className="order-2 text-center md:order-1 md:text-left">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
             {t("occupation")}
           </p>
-          <div className="mt-4">
+          <h1 id="hero-title" className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {t("greeting")}
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-gray-200 md:mx-0 md:text-xl">
+            {t("heroIntro")}
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3 md:justify-start">
             <a
               href="#projects"
-              className=" tracking-wide bg-white/10 text-white px-6 py-2  bg-white/10 backdrop-blur-sm border border-white/10 text-white hover:bg-white/20 transition"
+              className="rounded-md bg-cyan-300 px-5 py-3 font-semibold text-gray-950 transition hover:bg-cyan-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
               {t("invitation")}
             </a>
+            <a
+              href="#contact"
+              className="rounded-md border border-white/30 bg-white/5 px-5 py-3 font-semibold text-white transition hover:border-white/60 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            >
+              {t("contactCta")}
+            </a>
           </div>
         </div>
-        <div></div>
+        <div className="order-1 mx-auto w-40 overflow-hidden rounded-full border-4 border-white/15 shadow-2xl shadow-black/40 sm:w-48 md:order-2 md:w-64">
+          <img
+            src={profilePic}
+            alt={t("profileAlt")}
+            className="aspect-square h-full w-full object-cover"
+            fetchPriority="high"
+          />
+        </div>
       </div>
     </section>
   );
