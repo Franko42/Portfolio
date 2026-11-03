@@ -1,15 +1,11 @@
-
-export const SkillIcon = ({ skill }) => {
-  return (
-    <div className="flex flex-col items-center justify-center gap-2 group cursor-default">
-      <i
-        className={`devicon-${skill.icon}-plain text-white text-4xl transition-all duration-300 
-                   group-hover:scale-110 hover:bg-white/10 bg-white/5 rounded-md p-3`}
-      />
-
-      <span className="text-xs text-zinc-400 group-hover:text-white transition">
-        {skill.name}
-      </span>
-    </div>
-  );
-};
+export const SkillIcon = ({ skill }) => (
+  <div className="group flex flex-col items-center justify-center gap-2 text-center">
+    <i
+      aria-hidden="true"
+      className={`devicon-${skill.icon}-plain rounded-md bg-white/5 p-3 text-4xl text-white transition-transform duration-300 group-hover:scale-110 group-hover:bg-white/10`}
+    />
+    <span className="text-xs text-zinc-400 transition group-hover:text-white">
+      {skill.name}
+    </span>
+  </div>
+);
