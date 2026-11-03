@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-
 function SocialLink({ Icon, name, url }) {
   return (
     <a
