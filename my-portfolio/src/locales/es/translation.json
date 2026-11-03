@@ -1,62 +1,83 @@
 {
-  "greeting": "¡Hola, soy Franco!",
-  "occupation": "Desarrollador Frontend | Analista en Sistemas",
-  "invitation": "Revisá mi trabajo",
-  "aboutTitle": "Sobre Mí",
-  "aboutMe": "Soy un Analista en sistemas con estudios en desarrollo Frontend y experiencia en proyectos de desarrollo. Tengo conocimiento en tecnologías modernas, resolución de problemas, y mantenimiento de hardware. Apasionado de la tecnológia y capacitado continuamente, buscando contribuir en el desarrollo de soluciones tecnológicas innovativas en ambientes colaborativos.",
-  "contactTitle": "Contactame",
-  "contactDescription": "Sientete libre de contactarme para colaborar o simplemente decir Hola!",
-  "contactButton": "Decir Hola",
-  "projectsTitle": "Proyectos",
+  "pageTitle": "Franco Argüello | AI Builder y Desarrollador Full Stack",
+  "metaDescription": "Portfolio de Franco Argüello, AI Builder y desarrollador Full Stack. Automatización de flujos con agentes de código y desarrollo de productos web.",
+  "greeting": "Hola, soy Franco.",
+  "occupation": "AI Builder y Desarrollador Full Stack",
+  "heroIntro": "Construyo productos web útiles y automatizo flujos de desarrollo con agentes de código.",
+  "invitation": "Ver proyectos",
+  "contactCta": "Contactarme",
+  "profileAlt": "Retrato de Franco Argüello",
+  "aboutTitle": "Sobre mí",
+  "aboutMe": "Soy Desarrollador Full Stack y AI Builder en Silicon Misiones. Construyo productos web y automatizaciones prácticas para equipos de software. Mi trabajo reciente incluye TaskAgent, un orquestador en Node.js que ejecuta un agente CLI de código sobre historias de usuario, coordina pasos de Git y compilación, transmite logs y entrega los cambios a revisión humana. También desarrollo interfaces con React y Next.js, APIs REST y funcionalidades para productos SaaS.",
+  "contactTitle": "Hablemos",
+  "contactDescription": "¿Tenés un proyecto o una propuesta? Escribime.",
+  "contactButton": "Enviar un email",
+  "projectsTitle": "Proyectos destacados",
   "roleLabel": "Rol",
   "viewProject": "Ver proyecto",
+  "viewLiveProject": "Visitar sitio",
+  "viewSource": "Ver código",
+  "privateProject": "Proyecto privado / interno",
+  "professionalProject": "Proyecto profesional",
   "projects": {
+    "taskagent": {
+      "name": "TaskAgent",
+      "role": "Orquestador de agente de código · Silicon Misiones",
+      "description": "Dashboard en Node.js que ejecuta un agente CLI configurable sobre historias de usuario Markdown encoladas. Coordina ejecuciones secuenciales, ramas y commits opcionales de Git, logs en vivo, builds y una etapa de revisión humana.",
+      "skills": ["Node.js", "JavaScript", "Agentes CLI", "Git", "Taiga REST"]
+    },
+    "vertishops": {
+      "name": "VertiShops",
+      "role": "Creador y desarrollador Full Stack",
+      "description": "Plataforma SaaS multi-tienda de catálogos digitales para pequeños comercios, con gestión de productos, personalización, suscripciones, pagos recurrentes y pedidos preparados para WhatsApp.",
+      "skills": ["Next.js", "React", "TypeScript", "Prisma", "PostgreSQL", "MercadoPago"]
+    },
     "conectando": {
       "name": "Conectando.com.ar",
       "role": "Desarrollador Frontend",
-      "description": "Conectando es una plataforma desarrollada por Silicon Misiones que conecta startups, emprendedores y profesionales digitales. Participé en el desarrollo frontend, implementando interfaces modernas y mejorando la experiencia de usuario."
+      "description": "Plataforma de Silicon Misiones que conecta startups, emprendedores y profesionales digitales. Colaboré en el desarrollo de interfaces y mejoras de experiencia de usuario.",
+      "skills": ["React", "Tailwind CSS", "JavaScript", "Figma"]
     },
     "simi": {
-      "name": "Simi-access",
-      "role": "FullStack Developer",
-      "description": "Sistema de control de accesos y gestión de asistencia para el edificio empresarial de Silicon Misiones. Desarrollé funcionalidades fullstack para registro de ingresos/egresos, gestión de usuarios y visualización centralizada de asistencia."
+      "name": "SIMI Access",
+      "role": "Desarrollador Full Stack",
+      "description": "Sistema de control de accesos y gestión de asistencia para el edificio empresarial de Silicon Misiones. Desarrollé funcionalidades de ingresos y egresos, gestión de usuarios y visualización de asistencia.",
+      "skills": ["Next.js", "TypeScript", "Prisma", "PostgreSQL"]
     },
     "sinam": {
       "name": "SINAM",
-      "role": "Tester",
-      "description": "Sistema web para la gestión de casos internos en la defensoría de derechos de niños, niñas y adolescentes. Participé como tester, asegurando calidad, detección de errores y validación de funcionalidades clave."
+      "role": "QA Tester",
+      "description": "Sistema web de gestión de casos para una defensoría de derechos de niños, niñas y adolescentes. Probé flujos clave, reporté defectos y validé el comportamiento funcional.",
+      "skills": ["Testing funcional", "Testing manual", "Reporte de errores"]
     },
     "spinlab": {
-      "name": "Spinlab",
-      "role": "Tester",
-      "description": "SpinLab es un programa de venture building de Silicon Misiones enfocado en la creación y aceleración de startups científico-tecnológicas. Participé como QA Tester y analista, realizando testing integral del sistema y análisis de requerimientos para garantizar su confiabilidad y soportar flujos operativos complejos."
+      "name": "SpinLab",
+      "role": "QA Tester y analista",
+      "description": "Colaboré en un programa de venture building para startups científico-tecnológicas mediante pruebas del sistema, análisis de requerimientos y documentación técnica.",
+      "skills": ["Testing", "Análisis de requerimientos", "Documentación técnica"]
     },
     "alarms": {
       "name": "Alarms",
-      "role": "Proyecto Personal",
-      "description": "Aplicación para gestión de alarmas que permite crear, editar, eliminar y posponer recordatorios. Desarrollé el backend con tareas programadas (cron) y PostgreSQL, junto a una interfaz moderna en Next.js."
+      "role": "Proyecto personal",
+      "description": "Aplicación de gestión de alarmas para crear, editar, eliminar y posponer recordatorios, con tareas programadas, persistencia en PostgreSQL e interfaz en Next.js.",
+      "skills": ["Next.js", "NestJS", "PostgreSQL", "Tareas programadas"]
     },
     "notes": {
       "name": "Notes",
-      "role": "Proyecto Personal",
-      "description": "Aplicación de notas adhesivas desarrollada como prueba técnica en 3 días. Implementé un frontend en React y backend en Node.js/Express con PostgreSQL y Docker Compose."
+      "role": "Prueba técnica",
+      "description": "Aplicación de notas adhesivas desarrollada como prueba técnica en tres días, con frontend en React y backend Node.js/Express, PostgreSQL y Docker Compose.",
+      "skills": ["React", "Node.js", "Express", "PostgreSQL", "Docker"]
     }
   },
-
-  "skills": {
-    "Testing": "Testing",
-    "Manual Testing": "Testing Manual",
-    "Bug Reporting": "Reporte de Bugs",
-    "Technical Analysis": "Análisis Técnico",
-    "Functional Analysis": "Análisis Funcional",
-    "Technical Documentation": "Documentación Técnica",
-    "Cron Jobs": "Tareas Programadas"
-  },
-  
   "skillsTitle": "Habilidades",
-  "navigateAbout": "Sobre Mi",
+  "agenticSkillsTitle": "Flujos de trabajo con agentes",
+  "agenticSkills": ["Integración de agentes CLI", "Composición de prompts y contexto", "Colas secuenciales de tareas", "Automatización de Git y builds", "Revisión humana"],
+  "navigateAbout": "Sobre mí",
   "navigateProjects": "Proyectos",
   "navigateSkills": "Habilidades",
-  "navigateContact": "Contactar",
+  "navigateContact": "Contacto",
+  "languageLabel": "Elegir idioma",
+  "openMenu": "Abrir menú de navegación",
+  "closeMenu": "Cerrar menú de navegación",
   "copyrightFooter": "Franco Argüello. Todos los derechos reservados."
 }
