@@ -10,6 +10,7 @@
   "aboutEyebrow": "Un poco sobre mí",
   "aboutTitle": "Sobre mí",
   "aboutMe": "Soy Desarrollador Full Stack y AI Builder en Silicon Misiones. Construyo productos web y automatizaciones prácticas para equipos de software. Mi trabajo reciente incluye TaskAgent, un orquestador en Node.js que ejecuta un agente CLI de código sobre historias de usuario, coordina pasos de Git y compilación, transmite logs y entrega los cambios a revisión humana. También desarrollo interfaces con React y Next.js, APIs REST y funcionalidades para productos SaaS.",
+  "contactEyebrow": "Contacto",
   "contactTitle": "Hablemos",
   "contactDescription": "¿Tenés un proyecto o una propuesta? Escribime.",
   "contactButton": "Enviar un email",
