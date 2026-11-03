@@ -7,11 +7,13 @@
   "invitation": "Ver proyectos",
   "contactCta": "Contactarme",
   "profileAlt": "Retrato de Franco Argüello",
+  "aboutEyebrow": "Un poco sobre mí",
   "aboutTitle": "Sobre mí",
   "aboutMe": "Soy Desarrollador Full Stack y AI Builder en Silicon Misiones. Construyo productos web y automatizaciones prácticas para equipos de software. Mi trabajo reciente incluye TaskAgent, un orquestador en Node.js que ejecuta un agente CLI de código sobre historias de usuario, coordina pasos de Git y compilación, transmite logs y entrega los cambios a revisión humana. También desarrollo interfaces con React y Next.js, APIs REST y funcionalidades para productos SaaS.",
   "contactTitle": "Hablemos",
   "contactDescription": "¿Tenés un proyecto o una propuesta? Escribime.",
   "contactButton": "Enviar un email",
+  "projectsEyebrow": "Trabajo seleccionado",
   "projectsTitle": "Proyectos destacados",
   "roleLabel": "Rol",
   "viewProject": "Ver proyecto",
@@ -19,6 +21,7 @@
   "viewSource": "Ver código",
   "privateProject": "Proyecto privado / interno",
   "professionalProject": "Proyecto profesional",
+  "technologiesUsed": "Tecnologías utilizadas",
   "projects": {
     "taskagent": {
       "name": "TaskAgent",
