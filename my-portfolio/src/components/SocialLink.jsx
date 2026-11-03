@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 
 function SocialLink({ Icon, name, url }) {
   return (
@@ -6,9 +6,9 @@ function SocialLink({ Icon, name, url }) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center gap-2 bg-white/5 border border-white/5 rounded-md p-4 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105"
+      className="group inline-flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.04] px-5 py-4 text-sm font-medium text-gray-200 transition hover:border-cyan-300/30 hover:bg-white/[0.08] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
     >
-      <Icon className="text-4xl text-white/70 group-hover:text-white" />
+      <Icon aria-hidden="true" className="text-2xl text-cyan-300 transition group-hover:scale-110" />
       <span>{name}</span>
     </a>
   );
